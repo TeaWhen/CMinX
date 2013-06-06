@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ACEView/ACEView.h>
 
-@interface CMXAppDelegate : NSObject <NSApplicationDelegate>
+@interface CMXAppDelegate : NSObject <NSApplicationDelegate, ACEViewDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

@@ -7,12 +7,39 @@
 //
 
 #import "CMXAppDelegate.h"
+#import "ACEView/ACEView.h"
+#import "ACEView/ACEModeNames.h"
+#import "ACEView/ACEThemeNames.h"
+
+@interface CMXAppDelegate()
+
+@property (nonatomic) IBOutlet ACEView *editor;
+@property (weak) IBOutlet NSPopUpButton *theme;
+
+@end
 
 @implementation CMXAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [self.editor setDelegate:self];
+    [self.editor setMode:ACEModeCPP];
+    [self.editor setTheme:ACEThemeTomorrowNightEighties];
+    [self.editor executeScriptWhenLoaded:@"editor.setShowPrintMargin(false);"];
+    [self.editor setShowInvisibles:YES];
+}
+
+- (void)awakeFromNib {
+    [self.theme addItemsWithTitles:[ACEThemeNames humanThemeNames]];
+    [self.theme selectItemAtIndex:ACEThemeTomorrowNightEighties];
+}
+
+- (IBAction)themeChanged:(id)sender {
+    [self.editor setTheme:[self.theme indexOfSelectedItem]];
+}
+
+- (void) textDidChange:(NSNotification *)notification {
+    // nothing
 }
 
 @end
