@@ -25,7 +25,7 @@
     [self.editor setDelegate:self];
     [self.editor setMode:ACEModeCPP];
     [self.editor setTheme:ACEThemeTomorrowNightEighties];
-    [self.editor executeScriptWhenLoaded:@"editor.setShowPrintMargin(false);"];
+    [self.editor setShowPrintMargin:NO];
     [self.editor setShowInvisibles:YES];
 }
 
