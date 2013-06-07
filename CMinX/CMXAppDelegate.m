@@ -34,9 +34,17 @@
     [self.theme selectItemAtIndex:ACEThemeTomorrowNightEighties];
 }
 
+#pragma mark - Actions
+
 - (IBAction)themeChanged:(id)sender {
     [self.editor setTheme:[self.theme indexOfSelectedItem]];
 }
+
+- (IBAction)stepInto:(id)sender {
+    // fake action.. can't set breakpoint effect now.
+}
+
+#pragma mark - ACEViewDelegate
 
 - (void) textDidChange:(NSNotification *)notification {
     // nothing

@@ -1,3 +1,3 @@
 platform :osx
 
-pod 'ACEView', :git => 'https://github.com/AquarHEAD/ACEView.git'
+pod 'ACEView', :podspec => 'https://raw.github.com/AquarHEAD/ACEView/master/ACEView.podspec'
