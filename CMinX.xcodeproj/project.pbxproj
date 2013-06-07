@@ -14,6 +14,8 @@
 		4F288AF71760B40900EE73C9 /* CMXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F288AF61760B40900EE73C9 /* CMXAppDelegate.m */; };
 		4F288AFA1760B40A00EE73C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F288AF81760B40A00EE73C9 /* MainMenu.xib */; };
 		4F288B031760CA9A00EE73C9 /* TinyMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F288B021760CA9A00EE73C9 /* TinyMachine.m */; };
+		4F833F3417623700000BFEA6 /* TMInst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F833F3317623700000BFEA6 /* TMInst.m */; };
+		4F833F371762503C000BFEA6 /* TMStepResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F833F361762503C000BFEA6 /* TMStepResult.m */; };
 		5F5E7362AE934B80BFC5F8CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B6A7588A124E3DA3693978 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,10 @@
 		4F288AF91760B40A00EE73C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4F288B011760CA9A00EE73C9 /* TinyMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TinyMachine.h; path = TinyMachine/TinyMachine.h; sourceTree = "<group>"; };
 		4F288B021760CA9A00EE73C9 /* TinyMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TinyMachine.m; path = TinyMachine/TinyMachine.m; sourceTree = "<group>"; };
+		4F833F3217623700000BFEA6 /* TMInst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMInst.h; path = TinyMachine/TMInst.h; sourceTree = "<group>"; };
+		4F833F3317623700000BFEA6 /* TMInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMInst.m; path = TinyMachine/TMInst.m; sourceTree = "<group>"; };
+		4F833F351762503C000BFEA6 /* TMStepResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMStepResult.h; path = TinyMachine/TMStepResult.h; sourceTree = "<group>"; };
+		4F833F361762503C000BFEA6 /* TMStepResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMStepResult.m; path = TinyMachine/TMStepResult.m; sourceTree = "<group>"; };
 		8108FB1132FF46D89AB464C5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		99B6A7588A124E3DA3693978 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +97,7 @@
 		4F288AE91760B40900EE73C9 /* CMinX */ = {
 			isa = PBXGroup;
 			children = (
+				4F833F2C17623116000BFEA6 /* C- Compiler */,
 				4F288B001760CA5300EE73C9 /* Tiny Machine */,
 				4F288AF51760B40900EE73C9 /* CMXAppDelegate.h */,
 				4F288AF61760B40900EE73C9 /* CMXAppDelegate.m */,
@@ -117,8 +124,19 @@
 			children = (
 				4F288B011760CA9A00EE73C9 /* TinyMachine.h */,
 				4F288B021760CA9A00EE73C9 /* TinyMachine.m */,
+				4F833F3217623700000BFEA6 /* TMInst.h */,
+				4F833F3317623700000BFEA6 /* TMInst.m */,
+				4F833F351762503C000BFEA6 /* TMStepResult.h */,
+				4F833F361762503C000BFEA6 /* TMStepResult.m */,
 			);
 			name = "Tiny Machine";
+			sourceTree = "<group>";
+		};
+		4F833F2C17623116000BFEA6 /* C- Compiler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "C- Compiler";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 				4F288AF01760B40900EE73C9 /* main.m in Sources */,
 				4F288AF71760B40900EE73C9 /* CMXAppDelegate.m in Sources */,
 				4F288B031760CA9A00EE73C9 /* TinyMachine.m in Sources */,
+				4F833F3417623700000BFEA6 /* TMInst.m in Sources */,
+				4F833F371762503C000BFEA6 /* TMStepResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

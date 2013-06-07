@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TMInst.h"
+#import "TMStepResult.h"
 
-@interface TinyMachine : NSObject
+#define REGS_SIZE 8
+#define PC_REG    7
+
+@interface TinyMachine : NSObject {
+    int regs[REGS_SIZE];
+}
+
+@property (strong, nonatomic) NSMutableArray *instMem;
+@property (strong, nonatomic) NSMutableArray *dataMem;
+
+- (TMStepResult *)step;
+- (TMStepResult *)stepLine;
 
 @end
